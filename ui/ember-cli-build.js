@@ -10,6 +10,12 @@ const isTest = environment === 'test';
 
 module.exports = function(defaults) {
   var app = new EmberApp(defaults, {
+    svgJar: {
+      //optimize: false,
+      //paths: [],
+      optimizer: {},
+      sourceDirs: ['node_modules/@hashicorp/structure-icons/dist', 'public'],
+    },
     assetLoader: {
       generateURI: function(filePath) {
         return `${config.rootURL.replace(/\/$/, '')}${filePath}`;
