@@ -5,9 +5,9 @@
     </h1>
   </p.levelLeft>
   <p.levelRight>
-    {{#link-to 'vault.cluster.settings.auth.enable' class="button has-icon-right is-ghost is-compact"}}
+    {{#link-to "vault.cluster.settings.auth.enable" class="button is-ghost is-compact"}}
       Enable new method
-      {{i-con glyph="chevron-right" size=11}}
+      <Chevron @isButton={{true}} />
     {{/link-to}}
   </p.levelRight>
 </PageHeader>

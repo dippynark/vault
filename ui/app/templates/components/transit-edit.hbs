@@ -28,10 +28,10 @@
               secret=key.id
               mode="edit"
               replace=true
-              class="button has-icon-right is-ghost is-compact"
+              class="button is-ghost is-compact"
               }}
               Edit encryption key
-              {{i-con glyph="chevron-right" size=11}}
+              <Chevron @isButton={{true}} />
             {{/secret-link}}
           </div>
         {{/if}}
@@ -43,7 +43,7 @@
             data-test-transit-key-actions-link=true
           }}
             Key actions
-            {{i-con glyph="chevron-right" size=11}}
+            <Chevron @isButton={{true}} />
           {{/secret-link}}
         </div>
       {{/if}}

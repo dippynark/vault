@@ -19,11 +19,11 @@
           {{#link-to
             "vault.cluster.settings.auth.configure"
             model.id
-            class="button is-ghost has-icon-right is-compact"
+            class="button is-ghost is-compact"
             data-test-configure-link=true
           }}
             Configure
-            {{i-con glyph="chevron-right" size=11}}
+            <Chevron @isButton={{true}} />
           {{/link-to}}
         </div>
       </div>

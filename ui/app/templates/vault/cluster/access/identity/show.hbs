@@ -18,14 +18,14 @@
   </p.levelLeft>
   <p.levelRight>
     {{#unless (or (and (eq model.identityType "group") (eq model.type "internal")) model.alias)}}
-      {{#link-to "vault.cluster.access.identity.aliases.add" (pluralize model.identityType) model.id class="button has-icon-right is-ghost is-compact" data-test-entity-create-link=true}}
+      {{#link-to "vault.cluster.access.identity.aliases.add" (pluralize model.identityType) model.id class="button is-ghost is-compact" data-test-entity-create-link=true}}
         Create alias
-        {{i-con glyph="chevron-right" size=11}}
+        <Chevron @isButton={{true}} />
       {{/link-to}}
     {{/unless}}
-    {{#link-to "vault.cluster.access.identity.edit" (pluralize model.identityType) model.id class="button has-icon-right is-ghost is-compact" data-test-entity-edit-link=true}}
+    {{#link-to "vault.cluster.access.identity.edit" (pluralize model.identityType) model.id class="button is-ghost is-compact" data-test-entity-edit-link=true}}
       Edit {{model.identityType}}
-      {{i-con glyph="chevron-right" size=11}}
+      <Chevron @isButton={{true}} />
     {{/link-to}}
   </p.levelRight>
 </PageHeader>

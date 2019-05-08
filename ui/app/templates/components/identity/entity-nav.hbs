@@ -6,14 +6,14 @@
   </p.levelLeft>
   <p.levelRight>
     {{#if (eq identityType "entity")}}
-      {{#link-to "vault.cluster.access.identity.merge" (pluralize identityType) class="button has-icon-right is-ghost is-compact" data-test-entity-merge-link=true}}
+      {{#link-to "vault.cluster.access.identity.merge" (pluralize identityType) class="button is-ghost is-compact" data-test-entity-merge-link=true}}
         Merge {{pluralize identityType}}
-        {{i-con glyph="chevron-right" size=11}}
+        <Chevron @isButton={{true}} />
       {{/link-to}}
     {{/if}}
-    {{#link-to "vault.cluster.access.identity.create" (pluralize identityType) class="button has-icon-right is-ghost is-compact" data-test-entity-create-link=true}}
+    {{#link-to "vault.cluster.access.identity.create" (pluralize identityType) class="button is-ghost is-compact" data-test-entity-create-link=true}}
       Create {{identityType}}
-      {{i-con glyph="chevron-right" size=11}}
+      <Chevron @isButton={{true}} />
     {{/link-to}}
   </p.levelRight>
 </PageHeader>

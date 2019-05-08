@@ -28,10 +28,10 @@
               secret=model.id
               mode="edit"
               replace=true
-              class="button has-icon-right is-ghost is-compact"
+              class="button is-ghost is-compact"
               }}
               Edit role
-              {{i-con glyph="chevron-right" size=11}}
+              <Chevron @isButton={{true}} />
             {{/secret-link}}
           </div>
         {{/if}}
@@ -40,11 +40,11 @@
             {{#secret-link
               mode="credentials"
               secret=model.id
-              class="button has-icon-right is-ghost is-compact"
+              class="button is-ghost is-compact"
               data-test-backend-credentials="iam"
             }}
              Generate credentials
-             {{i-con glyph="chevron-right" size=11}}
+             <Chevron @isButton={{true}} />
             {{/secret-link}}
           </div>
         {{/if}}

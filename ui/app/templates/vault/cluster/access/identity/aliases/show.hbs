@@ -17,9 +17,9 @@
     </h1>
   </p.levelLeft>
   <p.levelRight>
-    {{#link-to "vault.cluster.access.identity.aliases.edit" model.id class="button has-icon-right is-ghost is-compact" data-test-alias-edit-link=true}}
+    {{#link-to "vault.cluster.access.identity.aliases.edit" model.id class="button is-ghost is-compact" data-test-alias-edit-link=true}}
       Edit {{lowercase (humanize model.identityType)}}
-      {{i-con glyph="chevron-right" size=11}}
+      <Chevron @isButton={{true}} />
     {{/link-to}}
   </p.levelRight>
 </PageHeader>
